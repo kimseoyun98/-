@@ -181,7 +181,7 @@ const App = () => {
                   <td>{country.silver}</td>
                   <td>{country.bronze}</td>
                   <td>
-                    <button onClick={() => deleteCountry(country.id)}>
+                    <button className="deleteBtn" onClick={() => deleteCountry(country.id)}>
                       삭제
                     </button>
                   </td>
