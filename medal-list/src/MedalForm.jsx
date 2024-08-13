@@ -11,6 +11,7 @@ const MedalForm = ({
   setBronze,
   onAdd,
   onUpdate,
+  
 }) => {
   return (
     <table>
