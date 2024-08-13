@@ -11,8 +11,6 @@
 
 2. MedalForm
 
-   사용자 입력을 처리합니다. 입력 필드와 버튼이 포함되어 있습니다.
-
 <Props> 부모 컴포넌트(App)로부터 전달받는 값입니다.
 
 - countryName, setCountryName: 국가 이름을 입력받고 업데이트하는 함수입니다.
@@ -20,20 +18,19 @@
 - silver, setSilver: 은메달 수를 입력받고 업데이트하는 함수입니다.
 - bronze, setBronze: 동메달 수를 입력받고 업데이트하는 함수입니다.
 - onAdd, onUpdate: 추가와 업데이트 버튼 클릭 시 호출되는 함수입니다.
-- onUpdate: 업데이트 가능 모드를 나타냅니다.
-- 입력 필드: 사용자가 국가명과 메달 수를 입력합니다. 입력값이 변경되면 상태가 업데이트됩니다.
-- 버튼: 추가와 업데이트 버튼은 각각 onAdd와 onUpdate 함수를 호출합니다. 버튼의 활성화 여부는 isUpdateMode에 따라 결정됩니다.
+- onUpdate: 업데이트 함수를 나타냅니다.
+- input: 사용자가 국가명과 메달 수를 입력합니다.
+- 버튼: 추가와 업데이트 버튼은 각각 onAdd와 onUpdate 함수를 호출합니다.
 
 3. addCountry
 
-- 새로운 국가를 추가하거나 기존 국가의 업데이트 모드를 활성화합니다.
-- 입력 검증: countryName이 비어 있으면 알림을 표시합니다.
-- 국가 추가: countryName이 목록에 없으면 새 국가를 추가하고, 이미 존재하면 업데이트 모드로 전환합니다.
+- alert: countryName이 비어 있으면 alert 표시합니다.
+- 추가: countryName이 목록에 없으면 새 국가를 추가하고, 이미 존재하면 alert 표시합니다.
 
 4. updateCountry
 
-- 입력 검증: countryName이 비어 있으면 alert 표시합니다.
-- 국가 업데이트: countryName이 목록에 있으면 해당 국가의 메달 수를 업데이트합니다. 없으면 추가 버튼을 사용하라고 알림을 표시합니다.
+- alert: countryName이 비어 있으면 alert 표시합니다.
+- 업데이트: countryName이 목록에 있으면 해당 국가의 메달 수를 업데이트합니다. 없으면 추가 버튼을 사용하라고 alert 표시합니다.
 
 5. deleteCountry
 
