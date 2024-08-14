@@ -36,6 +36,8 @@ const MedalForm = ({
                 value={gold}
                 placeholder="메달 수를 입력하세요"
                 onChange={(e) => setGold(Number(e.target.value))}
+                onFocus={(e) => e.target.value === '0' && setGold('')}
+                onBlur={(e) => e.target.value === '' && setGold(0)}
               />
             </label>
           </td>
@@ -47,6 +49,8 @@ const MedalForm = ({
                 value={silver}
                 placeholder="메달 수를 입력하세요"
                 onChange={(e) => setSilver(Number(e.target.value))}
+                onFocus={(e) => e.target.value === '0' && setSilver('')} 
+                onBlur={(e) => e.target.value === '' && setSilver(0)} 
               />
             </label>
           </td>
@@ -58,6 +62,8 @@ const MedalForm = ({
                 value={bronze}
                 placeholder="메달 수를 입력하세요"
                 onChange={(e) => setBronze(Number(e.target.value))}
+                onFocus={(e) => e.target.value === '0' && setBronze('')}
+                onBlur={(e) => e.target.value === '' && setBronze(0)} 
               />
             </label>
           </td>

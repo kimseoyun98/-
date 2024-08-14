@@ -20,7 +20,10 @@
 - onAdd, onUpdate: 추가와 업데이트 버튼 클릭 시 호출되는 함수입니다.
 - onUpdate: 업데이트 함수를 나타냅니다.
 - input: 사용자가 국가명과 메달 수를 입력합니다.
+- e.target.value: onChange 이벤트가 발생하며 input 요소의 현재 입력된 값을 나타냅니다. 즉, 사용자가 <input> 필드에 입력한 텍스트가 e.target.value로 나타나게 됩니다.
 - 버튼: 추가와 업데이트 버튼은 각각 onAdd와 onUpdate 함수를 호출합니다.
+- onFocus: Focus 시 0을 비움
+- onBlur: Focus 잃을 때 비어있으면 0으로 복원
 
 3. addCountry
 
